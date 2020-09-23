@@ -233,6 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
       scoreDisplay.innerHTML = '**' + score + '**'
       clearInterval(timerId)
+      alert('Game Over!')
+      window.location.reload()
     }
   }
 })
